@@ -68,8 +68,6 @@ export const CORE_SPECIALTIES: Specialty[] = [
       "Dusting, vacuuming and mopping throughout",
       "Recurring or one-time cleans",
     ],
-    image: "/images/house-cleaning-living-room-charleston-mo.jpg",
-    imageAlt: "Clean, tidy living room with fireplace after a house cleaning in Charleston, MO",
   },
   {
     id: "apartment-cleaning",
@@ -85,9 +83,6 @@ export const CORE_SPECIALTIES: Specialty[] = [
       "Move-in and move-out cleans for rentals",
       "Flexible scheduling around your lease",
     ],
-    image: "/images/apartment-kitchen-cleaning-charleston-mo.jpg",
-    imageAlt:
-      "Sparkling granite kitchen counters and sink after an apartment cleaning in Charleston, MO",
   },
   {
     id: "commercial-cleaning",
@@ -118,9 +113,6 @@ export const CORE_SPECIALTIES: Specialty[] = [
       "Pet odor freshening",
       "Area rugs and stairs",
     ],
-    image: "/images/carpet-rug-cleaning-dining-room-charleston-mo.jpg",
-    imageAlt:
-      "Fresh, clean area rugs and floors in a dining room, carpet cleaning in Charleston, MO",
   },
   {
     id: "laundry-service",
@@ -138,5 +130,94 @@ export const CORE_SPECIALTIES: Specialty[] = [
     ],
     image: "/images/laundry-service-fresh-bed-linens-charleston-mo.jpg",
     imageAlt: "Bed made with fresh, crisp white linens, laundry service in Charleston, MO",
+  },
+];
+
+export interface GalleryProject {
+  id: string;
+  /** Service page slug this photo belongs to (also picks the placeholder icon). */
+  serviceSlug: string;
+  title: string;
+  category: string;
+  location: string;
+  /** Photo path, e.g. "/gallery/house-cleaning-kitchen-charleston-mo.jpg". Leave empty to show a "photo coming soon" panel. */
+  imageUrl?: string;
+  seoAlt: string;
+  seoDescription: string;
+  highlights: string[];
+  description: string;
+}
+
+// Home page gallery: one slide per service for now. To add a real photo, upload it to public/gallery/
+// and set imageUrl (and update the alt text). Add more entries for more photos.
+export const WORK_GALLERY: GalleryProject[] = [
+  {
+    id: "house-cleaning",
+    serviceSlug: "house-cleaning",
+    title: "Whole-Home House Cleaning",
+    category: "House Cleaning",
+    location: "Charleston, MO",
+    seoAlt: "House cleaning in Charleston, MO by Southern Suds and Smiles",
+    seoDescription: "Kitchens, bathrooms, bedrooms and living areas cleaned top to bottom.",
+    highlights: [
+      "Kitchen and bathrooms sanitized",
+      "Dusting, vacuuming and mopping",
+      "Beds made and rooms tidied",
+    ],
+    description:
+      "A fresh, tidy home from top to bottom, so you can come home and relax with your family.",
+  },
+  {
+    id: "apartment-cleaning",
+    serviceSlug: "apartment-cleaning",
+    title: "Apartment & Rental Cleaning",
+    category: "Apartment Cleaning",
+    location: "Sikeston, MO",
+    seoAlt: "Apartment cleaning in Sikeston, MO by Southern Suds and Smiles",
+    seoDescription: "Apartments, duplexes and rentals cleaned for renters and landlords.",
+    highlights: [
+      "Kitchen and bathroom deep clean",
+      "Floors vacuumed and mopped",
+      "Move-in and move-out cleans",
+    ],
+    description:
+      "Clean, move-in-ready apartments for renters and landlords across Southeast Missouri.",
+  },
+  {
+    id: "commercial-cleaning",
+    serviceSlug: "commercial-cleaning",
+    title: "Office & Commercial Cleaning",
+    category: "Commercial Cleaning",
+    location: "Charleston, MO",
+    seoAlt: "Office and commercial cleaning in Charleston, MO by Southern Suds and Smiles",
+    seoDescription: "Offices, shops and restrooms kept clean and welcoming.",
+    highlights: [
+      "Desks and work areas wiped down",
+      "Restrooms and break rooms sanitized",
+      "Floors and entryways cleaned",
+    ],
+    description: "A clean, welcoming space for your staff and customers, on your schedule.",
+  },
+  {
+    id: "carpet-cleaning",
+    serviceSlug: "carpet-cleaning",
+    title: "Carpet & Rug Cleaning",
+    category: "Carpet Cleaning",
+    location: "New Madrid, MO",
+    seoAlt: "Carpet cleaning in New Madrid, MO by Southern Suds and Smiles",
+    seoDescription: "High-traffic carpet, rugs and stairs freshened up.",
+    highlights: ["High-traffic areas", "Spot and stain treatment", "Pet odor freshening"],
+    description: "Fresher, brighter carpets and rugs in the rooms your family uses most.",
+  },
+  {
+    id: "laundry-service",
+    serviceSlug: "laundry-service",
+    title: "Laundry: Wash, Dry & Fold",
+    category: "Laundry Service",
+    location: "Charleston, MO",
+    seoAlt: "Laundry service in Charleston, MO by Southern Suds and Smiles",
+    seoDescription: "Clothes, towels and linens washed, dried and neatly folded.",
+    highlights: ["Wash, dry and fold", "Towels and bed linens", "Beds made with fresh sheets"],
+    description: "The laundry pile, handled. Come home to folded clothes and fresh sheets.",
   },
 ];

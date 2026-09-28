@@ -21,5 +21,8 @@
 - Chat widget: set `GHL_CHAT_WIDGET_ID` in `src/routes/__root.tsx`.
 
 ## Photos
-- No photos yet. Service cards show branded icon panels; add a photo by setting `image`/`imageAlt`
-  on a `CORE_SPECIALTIES` entry and on the matching `SERVICE_PAGES` entry (put files in `public/images/`).
+- Don't use Pristine Cleaning's gallery photos (they're from Pristine's Facebook page).
+- Home gallery: `WORK_GALLERY` in `src/lib/business-data.ts`, one slide per service. Upload photos to
+  `public/gallery/` and set `imageUrl`; slides without one show a "photos coming soon" panel.
+- Service cards/pages: set `image`/`imageAlt` on the `CORE_SPECIALTIES` entry and the matching
+  `SERVICE_PAGES` entry (files in `public/images/`); without one they show a branded icon panel.

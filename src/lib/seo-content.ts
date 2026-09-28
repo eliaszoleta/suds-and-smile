@@ -121,8 +121,6 @@ export const SERVICE_PAGES: ServicePage[] = [
         text: "Seeing you relax and enjoy your time at home is why we do this. Friendly, respectful and easy to work with.",
       },
     ],
-    image: "/images/house-cleaning-living-room-charleston-mo.jpg",
-    imageAlt: "Clean, tidy living room with fireplace after a house cleaning in Charleston, MO",
     faqs: [
       {
         question: "How much does house cleaning cost in Charleston, MO?",
@@ -219,9 +217,6 @@ export const SERVICE_PAGES: ServicePage[] = [
         text: "We're based in Charleston, so we're close by and easy to reach by phone or text.",
       },
     ],
-    image: "/images/apartment-kitchen-cleaning-charleston-mo.jpg",
-    imageAlt:
-      "Sparkling granite kitchen counters and sink after an apartment cleaning in Charleston, MO",
     faqs: [
       {
         question: "Do you do move-out cleaning for apartments?",
@@ -397,9 +392,6 @@ export const SERVICE_PAGES: ServicePage[] = [
         text: "We'll tell you up front which stains should come out and which ones might not.",
       },
     ],
-    image: "/images/carpet-rug-cleaning-dining-room-charleston-mo.jpg",
-    imageAlt:
-      "Fresh, clean area rugs and floors in a dining room, carpet cleaning in Charleston, MO",
     faqs: [
       {
         question: "How much does carpet cleaning cost?",

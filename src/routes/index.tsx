@@ -5,6 +5,7 @@ import { FaqSection, ServiceImage, SudsBubbles } from "../components/SeoSections
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { BUSINESS_INFO, CORE_SPECIALTIES } from "../lib/business-data";
 import { QuoteRequestForm } from "../components/QuoteRequestForm";
+import { WorkShowcaseGallery } from "../components/WorkShowcaseGallery";
 import {
   Sparkles,
   Heart,
@@ -151,25 +152,35 @@ export function Index() {
               </div>
             </div>
 
-            {/* Right hero image */}
+            {/* Right hero visual (illustrated until real photos are added) */}
             <div className="lg:col-span-5 relative">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-accent/30 aspect-4/3 group bg-black">
-                <img
-                  src="/images/clean-open-concept-living-room-charleston-mo.jpg"
-                  alt="Bright, freshly cleaned open-concept living room and kitchen in Charleston, MO"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  loading="eager"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4 text-white p-4 rounded-2xl backdrop-blur-md bg-black/50 border border-white/20 flex items-center gap-3">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-accent/30 bg-gradient-to-br from-primary via-primary to-[oklch(0.3_0.06_215)] text-primary-foreground p-6 sm:p-8">
+                <SudsBubbles />
+                <div className="relative flex flex-col items-center gap-4 text-center">
                   <img
                     src={BUSINESS_INFO.logoUrl}
                     alt=""
-                    className="w-11 h-11 rounded-full bg-white shrink-0"
+                    className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white shadow-xl border-4 border-white/70"
                   />
-                  <div>
-                    <p className="text-sm font-bold">Come home to clean.</p>
-                    <p className="text-xs text-white/90 leading-relaxed">
+                  <p className="text-2xl sm:text-3xl font-bold text-white leading-tight">
+                    Come home to clean.
+                  </p>
+                  <ul className="grid grid-cols-2 gap-x-5 gap-y-2 text-left text-xs sm:text-sm text-primary-foreground/90">
+                    {[
+                      "Kitchens & baths",
+                      "Floors & carpets",
+                      "Dusting & tidying",
+                      "Laundry folded",
+                    ].map((item) => (
+                      <li key={item} className="flex items-center gap-1.5">
+                        <CheckCircle className="w-4 h-4 text-accent shrink-0" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="w-full mt-2 text-white p-3.5 rounded-2xl backdrop-blur-md bg-black/25 border border-white/20 flex items-center gap-2.5">
+                    <Smile className="w-5 h-5 text-accent shrink-0" />
+                    <p className="text-xs text-white/95 font-medium leading-relaxed text-left">
                       Southern charm, spotless results. Proudly serving Southeast Missouri.
                     </p>
                   </div>
@@ -180,8 +191,11 @@ export function Index() {
         </div>
       </section>
 
+      {/* Auto-sliding gallery (one slide per service until real photos are added) */}
+      <WorkShowcaseGallery />
+
       {/* How it works */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 md:-mt-12">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-2 mb-10">
           <span className="text-xs font-semibold uppercase tracking-widest text-accent">
             Easy as 1-2-3
