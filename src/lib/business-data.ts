@@ -68,6 +68,9 @@ export const CORE_SPECIALTIES: Specialty[] = [
       "Dusting, vacuuming and mopping throughout",
       "Recurring or one-time cleans",
     ],
+    image: "/images/house-cleaning-charleston-mo.jpg",
+    imageAlt:
+      "Spotless white soaking tub and fresh towels after a house cleaning in Charleston, MO",
   },
   {
     id: "apartment-cleaning",
@@ -83,6 +86,8 @@ export const CORE_SPECIALTIES: Specialty[] = [
       "Move-in and move-out cleans for rentals",
       "Flexible scheduling around your lease",
     ],
+    image: "/images/apartment-cleaning-charleston-mo.jpg",
+    imageAlt: "Clean, tidy apartment living room in Charleston, MO",
   },
   {
     id: "commercial-cleaning",
@@ -98,6 +103,8 @@ export const CORE_SPECIALTIES: Specialty[] = [
       "Trash removal and floor care",
       "Before or after business hours",
     ],
+    image: "/images/commercial-office-cleaning-charleston-mo.jpg",
+    imageAlt: "Clean office meeting room and floors, commercial cleaning in Charleston, MO",
   },
   {
     id: "carpet-cleaning",
@@ -113,6 +120,8 @@ export const CORE_SPECIALTIES: Specialty[] = [
       "Pet odor freshening",
       "Area rugs and stairs",
     ],
+    image: "/images/carpet-cleaning-charleston-mo.jpg",
+    imageAlt: "Vacuuming a carpet during carpet cleaning in Charleston, MO",
   },
   {
     id: "laundry-service",
@@ -156,8 +165,10 @@ export const WORK_GALLERY: GalleryProject[] = [
     serviceSlug: "house-cleaning",
     title: "Whole-Home House Cleaning",
     category: "House Cleaning",
-    location: "Charleston, MO",
-    seoAlt: "House cleaning in Charleston, MO by Southern Suds and Smiles",
+    location: "Benton, MO",
+    imageUrl: "/gallery/whole-home-house-cleaning-benton-mo.jpg",
+    seoAlt:
+      "Clean, tidy bedroom with fresh bedding and rugs after whole-home house cleaning in Benton, MO",
     seoDescription: "Kitchens, bathrooms, bedrooms and living areas cleaned top to bottom.",
     highlights: [
       "Kitchen and bathrooms sanitized",
@@ -173,7 +184,8 @@ export const WORK_GALLERY: GalleryProject[] = [
     title: "Apartment & Rental Cleaning",
     category: "Apartment Cleaning",
     location: "Sikeston, MO",
-    seoAlt: "Apartment cleaning in Sikeston, MO by Southern Suds and Smiles",
+    imageUrl: "/gallery/apartment-cleaning-sikeston-mo.jpg",
+    seoAlt: "Clean apartment kitchen with wiped counters and cabinets in Sikeston, MO",
     seoDescription: "Apartments, duplexes and rentals cleaned for renters and landlords.",
     highlights: [
       "Kitchen and bathroom deep clean",
@@ -188,8 +200,9 @@ export const WORK_GALLERY: GalleryProject[] = [
     serviceSlug: "commercial-cleaning",
     title: "Office & Commercial Cleaning",
     category: "Commercial Cleaning",
-    location: "Charleston, MO",
-    seoAlt: "Office and commercial cleaning in Charleston, MO by Southern Suds and Smiles",
+    location: "Sikeston, MO",
+    imageUrl: "/gallery/office-commercial-cleaning-sikeston-mo.jpg",
+    seoAlt: "Clean, bright office with polished floors after commercial cleaning in Sikeston, MO",
     seoDescription: "Offices, shops and restrooms kept clean and welcoming.",
     highlights: [
       "Desks and work areas wiped down",
@@ -204,7 +217,8 @@ export const WORK_GALLERY: GalleryProject[] = [
     title: "Carpet & Rug Cleaning",
     category: "Carpet Cleaning",
     location: "New Madrid, MO",
-    seoAlt: "Carpet cleaning in New Madrid, MO by Southern Suds and Smiles",
+    imageUrl: "/gallery/carpet-rug-cleaning-new-madrid-mo.jpg",
+    seoAlt: "Deep cleaning a carpet with a vacuum, carpet and rug cleaning in New Madrid, MO",
     seoDescription: "High-traffic carpet, rugs and stairs freshened up.",
     highlights: ["High-traffic areas", "Spot and stain treatment", "Pet odor freshening"],
     description: "Fresher, brighter carpets and rugs in the rooms your family uses most.",
@@ -214,8 +228,9 @@ export const WORK_GALLERY: GalleryProject[] = [
     serviceSlug: "laundry-service",
     title: "Laundry: Wash, Dry & Fold",
     category: "Laundry Service",
-    location: "Charleston, MO",
-    seoAlt: "Laundry service in Charleston, MO by Southern Suds and Smiles",
+    location: "Bertrand, MO",
+    imageUrl: "/gallery/laundry-wash-dry-fold-bertrand-mo.jpg",
+    seoAlt: "Freshly washed and folded clothes, laundry wash, dry and fold service in Bertrand, MO",
     seoDescription: "Clothes, towels and linens washed, dried and neatly folded.",
     highlights: ["Wash, dry and fold", "Towels and bed linens", "Beds made with fresh sheets"],
     description: "The laundry pile, handled. Come home to folded clothes and fresh sheets.",

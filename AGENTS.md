@@ -22,7 +22,8 @@
 
 ## Photos
 - Don't use Pristine Cleaning's gallery photos (they're from Pristine's Facebook page).
-- Home gallery: `WORK_GALLERY` in `src/lib/business-data.ts`, one slide per service. Upload photos to
-  `public/gallery/` and set `imageUrl`; slides without one show a "photos coming soon" panel.
+- Home gallery: `WORK_GALLERY` in `src/lib/business-data.ts`, one slide per service (photos in `public/gallery/`,
+  named `<service>-<town>-mo.jpg`). A slide without `imageUrl` shows a "photos coming soon" panel.
+- Keep uploads under ~1600px wide (originals were 3-8 MB) and use town-specific names/alt text.
 - Service cards/pages: set `image`/`imageAlt` on the `CORE_SPECIALTIES` entry and the matching
   `SERVICE_PAGES` entry (files in `public/images/`); without one they show a branded icon panel.

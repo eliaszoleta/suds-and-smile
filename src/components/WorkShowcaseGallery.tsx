@@ -55,12 +55,12 @@ export function WorkShowcaseGallery() {
         <div className="space-y-2">
           <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-accent">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>{HAS_PHOTOS ? "Real Results" : "Photos Coming Soon"}</span>
+            <span>{HAS_PHOTOS ? "Clean Homes & Businesses" : "Photos Coming Soon"}</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground">Our Work in Action</h2>
           <p className="text-sm text-muted-foreground max-w-xl">
             {HAS_PHOTOS
-              ? "See the results of our house, apartment, commercial and carpet cleaning and laundry service across Charleston and Southeast Missouri."
+              ? "House, apartment, commercial and carpet cleaning plus laundry service for homes and businesses across Charleston and Southeast Missouri."
               : "House, apartment, commercial and carpet cleaning plus laundry service across Charleston and Southeast Missouri. Photos from our jobs are on the way!"}
           </p>
         </div>

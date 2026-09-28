@@ -121,6 +121,9 @@ export const SERVICE_PAGES: ServicePage[] = [
         text: "Seeing you relax and enjoy your time at home is why we do this. Friendly, respectful and easy to work with.",
       },
     ],
+    image: "/images/house-cleaning-charleston-mo.jpg",
+    imageAlt:
+      "Spotless white soaking tub and fresh towels after a house cleaning in Charleston, MO",
     faqs: [
       {
         question: "How much does house cleaning cost in Charleston, MO?",
@@ -217,6 +220,9 @@ export const SERVICE_PAGES: ServicePage[] = [
         text: "We're based in Charleston, so we're close by and easy to reach by phone or text.",
       },
     ],
+    image: "/images/apartment-rental-cleaning-sikeston-mo.jpg",
+    imageAlt:
+      "Sparkling clean apartment bathroom with washer and dryer, rental cleaning in Sikeston, MO",
     faqs: [
       {
         question: "Do you do move-out cleaning for apartments?",
@@ -308,6 +314,8 @@ export const SERVICE_PAGES: ServicePage[] = [
         text: "Need an extra clean before an event or inspection? Call or text and we'll do our best to fit you in.",
       },
     ],
+    image: "/images/commercial-office-cleaning-charleston-mo.jpg",
+    imageAlt: "Clean office meeting room and floors, commercial cleaning in Charleston, MO",
     faqs: [
       {
         question: "What kinds of businesses do you clean?",
@@ -392,6 +400,8 @@ export const SERVICE_PAGES: ServicePage[] = [
         text: "We'll tell you up front which stains should come out and which ones might not.",
       },
     ],
+    image: "/images/carpet-cleaning-charleston-mo.jpg",
+    imageAlt: "Vacuuming a carpet during carpet cleaning in Charleston, MO",
     faqs: [
       {
         question: "How much does carpet cleaning cost?",
