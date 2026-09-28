@@ -72,9 +72,9 @@ export function Index() {
         <div className="absolute bottom-10 left-10 -z-10 w-80 h-80 bg-primary/10 rounded-full blur-2xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left copy */}
-            <div className="lg:col-span-7 space-y-6">
+            <div className="lg:col-span-6 space-y-6">
               <p className="flex w-fit items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary border border-accent/40 text-[11px] sm:text-xs font-semibold uppercase tracking-wider sm:tracking-widest text-primary">
                 <Sparkles className="w-3.5 h-3.5 text-accent shrink-0" />
                 Locally Owned in Charleston, MO · Free Quotes
@@ -153,8 +153,8 @@ export function Index() {
             </div>
 
             {/* Right hero image */}
-            <div className="lg:col-span-5 relative">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-accent/30 aspect-4/3 group bg-black">
+            <div className="lg:col-span-6 relative">
+              <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border border-accent/30 aspect-[4/3.4] group bg-black">
                 <img
                   src="/images/house-cleaning-services-charleston-mo.jpg"
                   alt="Sparkling clean kitchen island and living room after house cleaning services in Charleston, MO"
