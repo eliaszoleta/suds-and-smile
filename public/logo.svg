@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Southern Suds and Smiles logo">
+  <defs>
+    <radialGradient id="bub" cx="35%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#e9fbff"/>
+      <stop offset="0.45" stop-color="#7fd0dd"/>
+      <stop offset="1" stop-color="#1b7185"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="96" fill="#ffffff"/>
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#1b6f82" stroke-width="6"/>
+  <g stroke="#155e6f" stroke-width="2.5">
+    <circle cx="82" cy="82" r="34" fill="url(#bub)"/>
+    <circle cx="128" cy="66" r="21" fill="url(#bub)"/>
+    <circle cx="131" cy="104" r="14" fill="url(#bub)"/>
+    <circle cx="52" cy="54" r="10" fill="url(#bub)"/>
+  </g>
+  <g fill="#ffffff" opacity="0.9">
+    <ellipse cx="70" cy="68" rx="9" ry="6" transform="rotate(-35 70 68)"/>
+    <ellipse cx="121" cy="58" rx="5.5" ry="3.8" transform="rotate(-35 121 58)"/>
+    <circle cx="127" cy="99" r="3"/>
+    <circle cx="49" cy="51" r="2.5"/>
+  </g>
+  <path d="M56 132 Q100 170 144 132" fill="none" stroke="#e07a5f" stroke-width="11" stroke-linecap="round"/>
+  <path d="M154 30 l3.5 9 9 3.5 -9 3.5 -3.5 9 -3.5 -9 -9 -3.5 9 -3.5z" fill="#f2b56b"/>
+</svg>
