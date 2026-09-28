@@ -82,7 +82,7 @@ export function Index() {
 
               <div className="space-y-3">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.1]">
-                  Charleston House Cleaning &amp; Maid Services
+                  Charleston House Cleaning Services
                 </h1>
                 <p className="text-xl sm:text-2xl font-medium text-primary">
                   Instead of sulking, let us do the soaking and sudsing, with a smile! ✨
