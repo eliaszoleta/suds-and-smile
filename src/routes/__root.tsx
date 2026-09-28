@@ -26,7 +26,7 @@ const LOCAL_BUSINESS_JSON_LD = {
   "@id": BUSINESS_ID,
   name: BUSINESS_INFO.name,
   description:
-    "Locally owned house cleaning and maid service in Charleston, MO offering house cleaning, apartment cleaning, commercial cleaning, carpet cleaning and laundry service across Southeast Missouri.",
+    "Locally owned house cleaning service in Charleston, MO offering house cleaning, apartment cleaning, commercial cleaning, carpet cleaning and laundry service across Southeast Missouri.",
   url: absoluteUrl("/"),
   logo: absoluteUrl("/logo.png"),
   image: absoluteUrl(DEFAULT_OG_IMAGE),
