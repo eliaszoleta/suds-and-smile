@@ -7,7 +7,7 @@ import { Breadcrumbs, QuoteSection, ServiceLinkGrid } from "../components/SeoSec
 export const Route = createFileRoute("/service-areas")({
   head: () =>
     pageHead({
-      title: "Service Areas | Charleston, Sikeston & New Madrid, MO Cleaning",
+      title: "Service Areas in Southeast Missouri | Southern Suds and Smiles",
       description:
         "Southern Suds and Smiles serves Charleston, Sikeston, New Madrid, Benton, Bertrand and Anniston, MO. Find house cleaning and carpet cleaning near you.",
       path: "/service-areas",

@@ -8,7 +8,7 @@ import { Phone, Mail, MapPin, Sparkles, CheckCircle2 } from "lucide-react";
 export const Route = createFileRoute("/contact")({
   head: () =>
     pageHead({
-      title: "Contact Us | Free Cleaning Quote in Charleston, MO",
+      title: "Contact Us for a Free Cleaning Quote | Southern Suds and Smiles",
       description:
         "Call or text (573) 591-3375 or request a free online quote. Southern Suds and Smiles serves Charleston, Sikeston, New Madrid, Benton, Bertrand & Anniston MO.",
       path: "/contact",

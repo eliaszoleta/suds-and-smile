@@ -53,7 +53,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     name: "House Cleaning",
     formValue: "House Cleaning",
     specialtyId: "house-cleaning",
-    metaTitle: "Recurring House Cleaning Service | Charleston & Sikeston, MO",
+    metaTitle: "Recurring House Cleaning, Charleston MO | Southern Suds and Smiles",
     metaDescription:
       "Friendly, thorough house cleaning in Charleston, Sikeston, New Madrid, Benton & nearby MO towns. Weekly, bi-weekly, monthly or one-time. Free quote.",
     summary:
@@ -246,7 +246,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     name: "Commercial Cleaning",
     formValue: "Commercial Cleaning",
     specialtyId: "commercial-cleaning",
-    metaTitle: "Commercial & Office Cleaning in Charleston & Sikeston, MO",
+    metaTitle: "Commercial & Office Cleaning, Charleston MO | Southern Suds and Smiles",
     metaDescription:
       "Office and commercial cleaning for small businesses in Charleston, Sikeston, New Madrid & Benton MO. Restrooms, break rooms, floors. Free quote.",
     summary:

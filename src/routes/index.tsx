@@ -27,7 +27,7 @@ import {
 export const Route = createFileRoute("/")({
   head: () =>
     pageHead({
-      title: "Charleston, MO House Cleaning & Maid Service | Southern Suds",
+      title: "Charleston, MO House Cleaning & Maid Service | Southern Suds and Smiles",
       description:
         "Locally owned house cleaning in Charleston, MO: homes, apartments, offices, carpet cleaning & laundry. Serving Sikeston, New Madrid & Benton. Free quote.",
       path: "/",
