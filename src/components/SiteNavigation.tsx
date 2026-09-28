@@ -83,6 +83,13 @@ export function SiteHeader() {
             Service Areas
           </Link>
           <Link
+            to="/about"
+            activeProps={{ className: "text-primary font-bold border-b-2 border-accent pb-1" }}
+            className="text-foreground/80 hover:text-foreground transition-colors"
+          >
+            About
+          </Link>
+          <Link
             to="/contact"
             activeProps={{ className: "text-primary font-bold border-b-2 border-accent pb-1" }}
             className="text-foreground/80 hover:text-foreground transition-colors"
@@ -135,6 +142,13 @@ export function SiteHeader() {
               className="py-2 border-b border-border/50 text-foreground"
             >
               Service Areas
+            </Link>
+            <Link
+              to="/about"
+              onClick={() => setMobileMenuOpen(false)}
+              className="py-2 border-b border-border/50 text-foreground"
+            >
+              About
             </Link>
             <Link
               to="/contact"
@@ -205,6 +219,12 @@ export function SiteFooter() {
                 ))}
               </div>
             )}
+            <Link
+              to="/about"
+              className="inline-flex text-xs font-semibold text-accent hover:text-white transition-colors underline"
+            >
+              Meet the owners →
+            </Link>
           </div>
 
           {/* Quick links */}

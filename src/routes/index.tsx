@@ -21,7 +21,6 @@ import {
   Smile,
   ClipboardList,
   CalendarCheck,
-  Quote,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -152,35 +151,25 @@ export function Index() {
               </div>
             </div>
 
-            {/* Right hero visual (illustrated until real photos are added) */}
+            {/* Right hero image */}
             <div className="lg:col-span-5 relative">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-accent/30 bg-gradient-to-br from-primary via-primary to-[oklch(0.3_0.06_215)] text-primary-foreground p-6 sm:p-8">
-                <SudsBubbles />
-                <div className="relative flex flex-col items-center gap-4 text-center">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-accent/30 aspect-4/3 group bg-black">
+                <img
+                  src="/images/clean-open-concept-living-room-charleston-mo.jpg"
+                  alt="Bright, freshly cleaned open-concept living room and kitchen in Charleston, MO"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="eager"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4 text-white p-4 rounded-2xl backdrop-blur-md bg-black/50 border border-white/20 flex items-center gap-3">
                   <img
                     src={BUSINESS_INFO.logoUrl}
                     alt=""
-                    className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white shadow-xl border-4 border-white/70"
+                    className="w-11 h-11 rounded-full bg-white shrink-0"
                   />
-                  <p className="text-2xl sm:text-3xl font-bold text-white leading-tight">
-                    Come home to clean.
-                  </p>
-                  <ul className="grid grid-cols-2 gap-x-5 gap-y-2 text-left text-xs sm:text-sm text-primary-foreground/90">
-                    {[
-                      "Kitchens & baths",
-                      "Floors & carpets",
-                      "Dusting & tidying",
-                      "Laundry folded",
-                    ].map((item) => (
-                      <li key={item} className="flex items-center gap-1.5">
-                        <CheckCircle className="w-4 h-4 text-accent shrink-0" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="w-full mt-2 text-white p-3.5 rounded-2xl backdrop-blur-md bg-black/25 border border-white/20 flex items-center gap-2.5">
-                    <Smile className="w-5 h-5 text-accent shrink-0" />
-                    <p className="text-xs text-white/95 font-medium leading-relaxed text-left">
+                  <div>
+                    <p className="text-sm font-bold">Come home to clean.</p>
+                    <p className="text-xs text-white/90 leading-relaxed">
                       Southern charm, spotless results. Proudly serving Southeast Missouri.
                     </p>
                   </div>
@@ -372,35 +361,39 @@ export function Index() {
         </div>
       </section>
 
-      {/* Our Story (in the owners' words) */}
+      {/* About teaser (full story lives on /about) */}
       <section className="relative overflow-hidden bg-primary text-primary-foreground py-16">
         <SudsBubbles className="opacity-60" />
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <span className="text-xs font-semibold uppercase tracking-widest text-accent">
-            Meet the Owners
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white">
-            Two Southern Charms on a Mission
-          </h2>
-          <figure className="bg-white/5 backdrop-blur-sm border border-white/10 p-6 sm:p-10 rounded-2xl space-y-5 text-left">
-            <Quote className="w-8 h-8 text-accent" />
-            <blockquote className="space-y-4 text-base sm:text-lg text-primary-foreground/90 leading-relaxed">
-              <p>
-                We're two southern charms who wanted to bring joy while relieving the daily stress
-                and anxiety we all feel from keeping up a clean house. Instead of sulking, we do the
-                soaking and sudsing for you, with a smile!
-              </p>
-              <p>
-                We find happiness and fulfillment in picking up where you left off on the to-do
-                list. Seeing people happy, knowing they can come home and spend quality time with
-                their family, is why we work so hard.
-              </p>
-            </blockquote>
-            <figcaption className="pt-4 border-t border-white/10 text-sm">
-              <p className="font-bold text-white">{BUSINESS_INFO.owners} &amp; team</p>
-              <p className="text-primary-foreground/70">Owners, {BUSINESS_INFO.name}</p>
-            </figcaption>
-          </figure>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div className="lg:col-span-5">
+            <div className="rounded-3xl overflow-hidden border border-white/20 shadow-2xl aspect-4/3 bg-black">
+              <img
+                src="/images/sparkling-clean-bathroom-southeast-missouri.jpg"
+                alt="Sparkling clean bathroom with fresh towels"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div className="lg:col-span-7 space-y-5">
+            <span className="text-xs font-semibold uppercase tracking-widest text-accent">
+              About Us
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white">
+              Two Southern Charms on a Mission
+            </h2>
+            <p className="text-base text-primary-foreground/85 leading-relaxed">
+              We started {BUSINESS_INFO.name} to bring a little joy and a lot less stress to our
+              neighbors. We pick up where you left off on the to-do list so you can come home and
+              spend quality time with your family.
+            </p>
+            <Link
+              to="/about"
+              className="inline-flex items-center gap-2 px-7 py-3.5 bg-accent text-accent-foreground font-semibold rounded-full text-xs uppercase tracking-widest hover:opacity-95 transition-all shadow-md"
+            >
+              Read Our Story <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </section>
 

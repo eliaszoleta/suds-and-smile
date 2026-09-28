@@ -68,6 +68,8 @@ export const CORE_SPECIALTIES: Specialty[] = [
       "Dusting, vacuuming and mopping throughout",
       "Recurring or one-time cleans",
     ],
+    image: "/images/house-cleaning-living-room-charleston-mo.jpg",
+    imageAlt: "Clean, tidy living room with fireplace after a house cleaning in Charleston, MO",
   },
   {
     id: "apartment-cleaning",
@@ -83,6 +85,9 @@ export const CORE_SPECIALTIES: Specialty[] = [
       "Move-in and move-out cleans for rentals",
       "Flexible scheduling around your lease",
     ],
+    image: "/images/apartment-kitchen-cleaning-charleston-mo.jpg",
+    imageAlt:
+      "Sparkling granite kitchen counters and sink after an apartment cleaning in Charleston, MO",
   },
   {
     id: "commercial-cleaning",
@@ -113,6 +118,9 @@ export const CORE_SPECIALTIES: Specialty[] = [
       "Pet odor freshening",
       "Area rugs and stairs",
     ],
+    image: "/images/carpet-rug-cleaning-dining-room-charleston-mo.jpg",
+    imageAlt:
+      "Fresh, clean area rugs and floors in a dining room, carpet cleaning in Charleston, MO",
   },
   {
     id: "laundry-service",
@@ -128,5 +136,7 @@ export const CORE_SPECIALTIES: Specialty[] = [
       "Beds made with fresh sheets",
       "Add it to any cleaning visit",
     ],
+    image: "/images/laundry-service-fresh-bed-linens-charleston-mo.jpg",
+    imageAlt: "Bed made with fresh, crisp white linens, laundry service in Charleston, MO",
   },
 ];
